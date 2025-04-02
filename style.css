@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+.container {
+    position: relative;
+    padding: 5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkgray;
+}
+
+.calendar-search {
+    background-color: white;
+    display: flex;
+    border: 1px solid black;
+
+}
+
+.calendar-search input {
+    border: none;
+    padding: 2px;
+    padding-left: 20px;
+    margin: 2px;
+    color: rgb(164, 171, 179);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.calendar-search button {
+    background-color: white;
+    border: none;
+    border-left: 1px solid black;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.calendar-header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.month-slider {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.arrow-button {
+    padding-top: 2px;
+    border: none;
+    background-color: white;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar-days {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+border: 1px solid black;
+grid-gap: 1px;
+background-color: black;
+}
+
+.calendar-days span {
+    padding: 0.4rem;
+    background-color: white;
+    text-align: center;
+}
+
+.calendar-days :nth-child(even) {
+    background-color: lightgray;
+}
