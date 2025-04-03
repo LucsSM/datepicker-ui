@@ -29,6 +29,7 @@ body {
 }
 
 .calendar-search input {
+    width: 80%;
     border: none;
     padding: 2px;
     padding-left: 20px;
@@ -41,6 +42,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .calendar-search button {
+    width: 20%;
     background-color: white;
     border: none;
     border-left: 1px solid black;
@@ -71,6 +73,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-top: 2px;
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 
 .weekdays {
